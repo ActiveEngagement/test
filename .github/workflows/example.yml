@@ -13,7 +13,6 @@ jobs:
       - uses: actions/checkout@v3
       - uses: ActiveEngagement/deployer-action@master
         with:
-          ssh_host: forge@staging.doalchemy.com
           ssh_key: ${{ secrets.KEY }}
           server_dir: .deploy-artifacts/staging.doalchemy.com/build
           artifacts: |
