@@ -12,7 +12,7 @@ jobs:
     steps:
       - uses: ActiveEngagement/deployer-action@master
         with:
-          example: |
-            one: 1
-            two: 2
-            three: 3
+          examples: |
+            David
+            Elijah
+            Noah
