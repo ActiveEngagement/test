@@ -11,3 +11,8 @@ jobs:
     
     steps:
       - uses: ActiveEngagement/deployer-action@master
+        with:
+          example:
+            - one
+            - two
+            - three
