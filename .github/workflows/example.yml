@@ -15,6 +15,7 @@ jobs:
         with:
           ssh_host: forge@staging.doalchemy.com
           ssh_key: ${{ secrets.KEY }}
+          server_dir: .deploy-artifacts/staging.doalchemy.com/build
           artifacts: |
             {
               "build": "public/build"
