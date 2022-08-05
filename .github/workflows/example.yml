@@ -1,0 +1,13 @@
+name: Example
+
+on:
+  push:
+    branches: [ * ]
+
+jobs:
+  full-build:
+
+    runs-on: ubuntu-latest
+    
+    steps:
+      - uses: actengage/deployer-action
