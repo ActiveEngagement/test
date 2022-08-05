@@ -14,5 +14,5 @@ jobs:
         with:
           artifacts: |
             {
-              "public/build": "build"
+              "build": "public/build"
             }
