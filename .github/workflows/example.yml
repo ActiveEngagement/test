@@ -13,6 +13,6 @@ jobs:
       - uses: ActiveEngagement/deployer-action@master
         with:
           examples: |
-            David
-            Elijah
-            Noah
+            {
+              "public/build": "build"
+            }
