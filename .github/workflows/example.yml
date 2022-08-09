@@ -11,10 +11,11 @@ jobs:
     
     steps:
       - uses: actions/checkout@v3
-      - uses: ActiveEngagement/deployer-action@master
+      - uses: ActiveEngagement/deployer-action@directories
         with:
+          ssh_host: forge@staging.doalchemy.com
           ssh_key: ${{ secrets.KEY }}
-          server_dir: .deploy-artifacts/staging.doalchemy.com/build
+          server_dir: test-bundles
           artifacts: |
             {
               "build": "public/build"
