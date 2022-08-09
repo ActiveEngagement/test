@@ -15,7 +15,7 @@ jobs:
         with:
           ssh_host: forge@staging.doalchemy.com
           ssh_key: ${{ secrets.KEY }}
-          server_dir: test-bundles
+          destination: test-bundles
           artifacts: |
             {
               "build": "public/build"
