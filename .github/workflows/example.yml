@@ -11,7 +11,7 @@ jobs:
     
     steps:
       - uses: actions/checkout@v3
-      - uses: ActiveEngagement/deployer-action@directories
+      - uses: ActiveEngagement/deployer-action@manifest
         with:
           ssh_host: forge@staging.doalchemy.com
           ssh_key: ${{ secrets.KEY }}
