@@ -21,4 +21,4 @@ jobs:
               "build": "public/build"
             }
           env: testing
-          version: ${{ github.context.ref_name }}
+          version: ${{ github.ref_name }}
