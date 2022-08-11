@@ -2,7 +2,7 @@ name: Example
 
 on:
   push:
-    branches: [ master ]
+    tags: [ 'v*' ]
 
 jobs:
   full-build:
@@ -20,3 +20,5 @@ jobs:
             {
               "build": "public/build"
             }
+          env: testing
+          version: ${{ github.context.ref_name }}
