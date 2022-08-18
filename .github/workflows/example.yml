@@ -11,14 +11,7 @@ jobs:
     
     steps:
       - uses: actions/checkout@v3
-      - uses: ActiveEngagement/deployer-action@master
+      - uses: ActiveEngagement/validate-version@master
         with:
-          ssh_host: forge@staging.doalchemy.com
-          ssh_key: ${{ secrets.KEY }}
-          destination: test-bundles
-          artifacts: |
-            {
-              "build": "public/build"
-            }
-          env: testing
-          version: ${{ github.ref_name }}
+          ref_name: ${{ github.ref_name }}
+          branch: master
