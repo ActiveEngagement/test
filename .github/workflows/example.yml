@@ -11,6 +11,7 @@ jobs:
     
     steps:
       - uses: actions/checkout@v3
+        fetch_depth: 0
       - uses: ActiveEngagement/validate-version@master
         with:
           ref_name: ${{ github.ref_name }}
