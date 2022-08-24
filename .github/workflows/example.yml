@@ -16,4 +16,4 @@ jobs:
           ref_name: ${{ github.ref_name }}
           branch: master
       - name: Setup upterm session
-          uses: lhotari/action-upterm@v1
+        uses: lhotari/action-upterm@v1
