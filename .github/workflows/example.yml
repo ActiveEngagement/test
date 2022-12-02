@@ -11,10 +11,11 @@ jobs:
     
     steps:
       - uses: actions/checkout@v3
+      - uses: ActiveEngagement/theguru@master
         with:
-          fetch-depth: 0
-      - uses: ActiveEngagement/validate-version@feature-8-b
-        with:
-          ref_name: ${{ github.ref_name }}
-          branch: master
-          tags: '^v.*$'
+          user_email: ${{ secrets.GURU_USER_EMAIL }}
+          user_token: ${{ secrets.GURU_USER_TOKEN }}
+          doc_path: './doc'
+          collection_id: '68517b36-e873-4bf0-8aae-c486ea45ea0d'
+          board_id: 'dea1f633-601a-4fb3-82e8-8e3ecf1d9931'
+
