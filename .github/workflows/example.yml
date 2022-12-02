@@ -2,7 +2,7 @@ name: Example
 
 on:
   push:
-    tags: [ 'master' ]
+    branches: [ 'master' ]
 
 jobs:
   full-build:
