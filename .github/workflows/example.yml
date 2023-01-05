@@ -18,3 +18,4 @@ jobs:
           file_path: './doc/subboard/example.yaml'
           card_title: Test Card
           collection_id: '68517b36-e873-4bf0-8aae-c486ea45ea0d'
+          workflow_file: example.yml
