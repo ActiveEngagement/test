@@ -11,7 +11,7 @@ jobs:
     
     steps:
       - uses: actions/checkout@v3
-      - uses: ActiveEngagement/theguru@fix-footer-link
+      - uses: ActiveEngagement/theguru@local-id-approach
         with:
           user_email: ${{ secrets.GURU_USER_EMAIL }}
           user_token: ${{ secrets.GURU_USER_TOKEN }}
