@@ -20,5 +20,5 @@ jobs:
           cards: |
             {
               "./doc/subboard/example.yaml": "Test Card",
-              "./doc/example.yaml": "Root Card"
+              "./doc/test.yaml": "Root Card"
             }
