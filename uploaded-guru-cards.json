@@ -1,1 +1,4 @@
-{"./doc/subboard/example.yaml":"e89d0c0c-3b8c-455c-bb49-ca6c76a4f77f","./doc/test.yaml":"8d77edb0-44dc-4226-b18b-ed45f531bed9"}
+{
+    "./doc/test.md": "fa2083a2-3e78-4f00-bd9d-7af08a3a21d0",
+    "./doc/another_test.md": "ca0fbfa6-69a6-4eee-a4ed-4ae0dc603f62"
+}
