@@ -21,5 +21,5 @@ jobs:
           board_section_id: b42cb5c9-29f9-44ac-8664-2f0711b68b6d
           cards: |
             {
-              "./doc/test.md": "Test Card"
+              "doc/test.md": "Test Card"
             }
