@@ -22,3 +22,4 @@ jobs:
               "doc/test.md": "Test Card"
             }
           image_handler: upload
+          debug_logging: true
