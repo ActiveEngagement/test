@@ -21,3 +21,4 @@ jobs:
             {
               "doc/test.md": "Test Card"
             }
+          github: ${{ toJson(github} }}
