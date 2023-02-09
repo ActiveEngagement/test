@@ -14,14 +14,14 @@ jobs:
       - uses: actions/checkout@v3
         with:
           fetch-depth: 10
-      - uses: ActiveEngagement/theguru@image-403-fix-b
+      - uses: ActiveEngagement/theguru@test
         with:
           user_email: ${{ secrets.GURU_USER_EMAIL }}
           user_token: ${{ secrets.GURU_USER_TOKEN }}
           collection_id: 68517b36-e873-4bf0-8aae-c486ea45ea0d
           cards: |
             {
-              "doc/test1.md": "Test Card"
+              "doc/tailwind.md": "Test Tailwind Card"
             }
           image_handler: upload
           github: ${{ toJson(github) }}
