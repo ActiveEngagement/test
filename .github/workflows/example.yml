@@ -25,3 +25,4 @@ jobs:
             }
           image_handler: upload
           github: ${{ toJson(github) }}
+          card_footer: false
