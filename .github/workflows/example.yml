@@ -21,7 +21,7 @@ jobs:
           collection_id: 68517b36-e873-4bf0-8aae-c486ea45ea0d
           cards: |
             {
-              "doc/tailwind.md": "Test Tailwind Card"
+              "tailwind.md": "Test Tailwind Card"
             }
           image_handler: upload
           github: ${{ toJson(github) }}
