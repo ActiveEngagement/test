@@ -1,7 +1,5 @@
 # Test
 
-Modified.
-
-This is a test file that will be deleted. Hopefully it works!
+This is a test file that will be deleted eventually.
 
 ![test image](/doc/img/jelly-beans.jpg)
