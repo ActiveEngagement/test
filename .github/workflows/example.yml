@@ -12,18 +12,11 @@ jobs:
     
     steps:
       - uses: actions/checkout@v3
+      - run: cd .github/scripts/test
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
         with:
-          fetch-depth: 10
-      - uses: ActiveEngagement/theguru@master
-        with:
-          user_email: ${{ secrets.GURU_USER_EMAIL }}
-          user_token: ${{ secrets.GURU_USER_TOKEN }}
-          collection_id: 68517b36-e873-4bf0-8aae-c486ea45ea0d
-          cards: |
-            {
-              "tailwind.md": "Test Tailwind Card"
-            }
-          image_handler: upload
-          github: ${{ toJson(github) }}
-          card_footer: false
-          update_all: true
+          node-version: 18
+      - name: Install Dependencies
+        run: npm install
+      - run: node index.js
