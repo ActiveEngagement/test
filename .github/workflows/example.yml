@@ -9,15 +9,14 @@ jobs:
   full-build:
 
     runs-on: ubuntu-latest
-    
+
     steps:
       - uses: actions/checkout@v3
       - name: Setup Node.js
         uses: actions/setup-node@v3
         with:
           node-version: 18
-      - run: cd .github/scripts/test
-      - run: ls
-      - name: Install Dependencies
-        run: npm install
-      - run: node index.js
+      - run: |
+          npm install
+          node index.js
+        working-directory: .github/scripts/test
