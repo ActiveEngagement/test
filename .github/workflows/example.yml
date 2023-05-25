@@ -9,14 +9,23 @@ jobs:
   full-build:
 
     runs-on: ubuntu-latest
-
+    
     steps:
       - uses: actions/checkout@v3
-      - name: Setup Node.js
-        uses: actions/setup-node@v3
         with:
-          node-version: 18
-      - run: |
-          npm install
-          node index.js
-        working-directory: .github/scripts/test
+          fetch-depth: 10
+      - uses: ActiveEngagement/theguru@fix-59
+        with:
+          user_email: ${{ secrets.GURU_USER_EMAIL }}
+          user_token: ${{ secrets.GURU_USER_TOKEN }}
+          collection_id: 68517b36-e873-4bf0-8aae-c486ea45ea0d
+          collection_type: standard
+          cards: |
+            [
+              {
+                "path": "tailwind.md",
+                "title": "Test Tailwind Card"
+              }
+            ]
+          image_handler: github_urls
+          github: {{toJson(github)}}
