@@ -1,5 +1,7 @@
 # Tailwind Colorize 
 
+[click here](./test.txt)
+
 ![Colorize Banner](./assets/banner.png)
 
 ![Version](https://img.shields.io/github/package-json/v/ActiveEngagement/tailwind-colorize-plugin/master?label=Version)
