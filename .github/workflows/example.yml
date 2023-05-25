@@ -28,4 +28,4 @@ jobs:
               }
             ]
           image_handler: github_urls
-          github: {{toJson(github)}}
+          github: ${{toJson(github)}}
