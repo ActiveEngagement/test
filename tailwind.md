@@ -1,6 +1,8 @@
 # Tailwind Colorize 
 
 [click here](./test.txt)
+[click here](./committed.txt)
+[click here](./committed2.txt)
 
 ![Colorize Banner](./assets/banner.png)
 
