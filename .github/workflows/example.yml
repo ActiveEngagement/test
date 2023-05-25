@@ -27,5 +27,5 @@ jobs:
                 "title": "Test Tailwind Card"
               }
             ]
-          image_handler: github_urls
+          attachment_handler: github_urls
           github: ${{toJson(github)}}
