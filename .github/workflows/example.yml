@@ -16,7 +16,17 @@ jobs:
         uses: actions/setup-node@v3
         with:
           node-version: 18
-      - run: |
-          npm install
-          node index.js
-        working-directory: .github/scripts/test
+      - uses: ActiveEngagement/theguru@v0.7
+        with:
+          user_email: ${{ secrets.GURU_USER_EMAIL }}
+          user_token: ${{ secrets.GURU_USER_TOKEN }}
+          github: ${{ toJson(github) }} # Provides some necessary context.
+          collection_type: standard
+          collection_id: t13d6/Packages
+          cards: | # Adjust as required.
+            [
+              {
+                "path": "doc/test1.md",
+                "title": "Test Tailwind Card"
+              }
+            ]
